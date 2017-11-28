@@ -1,0 +1,588 @@
+{
+	"info": {
+		"name": "MEssenger",
+		"_postman_id": "252fc453-f490-81aa-feb5-113758768a47",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send Image Attachment - URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n\"message\":{\n    \"attachment\":{\n      \"type\":\"image\", \n      \"payload\":{\n        \"url\":\"https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/21368871_696201897239459_8416918894348350774_o.jpg?_nc_log=1&oh=b3bdc47a85bf37ccd2d9d3626d333cd2&oe=5A1E43C5\",\n        \"is_reusable\": true\n      }\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.10/me/messages?access_token={{PAGE_TOKEN}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.10",
+						"me",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "{{PAGE_TOKEN}}",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get IDs for Apps - from PSID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"text\":\"Pick a color:\",\n    \"quick_replies\":[\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Red\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED\"\n      },\n      {\n        \"content_type\":\"location\",\n        \"title\":\"HEY\"\n      },\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Green\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN\",\n        \"image_url\":\"http://petersfantastichats.com/img/green.png\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/1254459154682919/ids_for_apps?access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD&appsecret_proof=33f4d735368e03159072fa695e9a71b2a87e9482b410dd8b789922b0ea0e3600",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"1254459154682919",
+						"ids_for_apps"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						},
+						{
+							"key": "appsecret_proof",
+							"value": "33f4d735368e03159072fa695e9a71b2a87e9482b410dd8b789922b0ea0e3600",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get IDs for Pages - from PSID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"text\":\"Pick a color:\",\n    \"quick_replies\":[\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Red\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED\"\n      },\n      {\n        \"content_type\":\"location\",\n        \"title\":\"HEY\"\n      },\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Green\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN\",\n        \"image_url\":\"http://petersfantastichats.com/img/green.png\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/1254459154682919/ids_for_pages?access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD&appsecret_proof=33f4d735368e03159072fa695e9a71b2a87e9482b410dd8b789922b0ea0e3600",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"1254459154682919",
+						"ids_for_pages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						},
+						{
+							"key": "appsecret_proof",
+							"value": "33f4d735368e03159072fa695e9a71b2a87e9482b410dd8b789922b0ea0e3600",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get IDs for Apps - from AID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"text\":\"Pick a color:\",\n    \"quick_replies\":[\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Red\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED\"\n      },\n      {\n        \"content_type\":\"location\",\n        \"title\":\"HEY\"\n      },\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Green\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN\",\n        \"image_url\":\"http://petersfantastichats.com/img/green.png\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/10213188985661476/ids_for_apps?access_token=1719933678308212|xViKmCUvXGcEkMdwv2ZGmK6iZRE&appsecret_proof=268d572551610962ece4facc74622182154727f27eb2710fbd60a1dc1dcf72a1",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"10213188985661476",
+						"ids_for_apps"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1719933678308212|xViKmCUvXGcEkMdwv2ZGmK6iZRE",
+							"equals": true
+						},
+						{
+							"key": "appsecret_proof",
+							"value": "268d572551610962ece4facc74622182154727f27eb2710fbd60a1dc1dcf72a1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get IDs for Pages - from AID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"text\":\"Pick a color:\",\n    \"quick_replies\":[\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Red\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED\"\n      },\n      {\n        \"content_type\":\"location\",\n        \"title\":\"HEY\"\n      },\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Green\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN\",\n        \"image_url\":\"http://petersfantastichats.com/img/green.png\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/10213188985661476/ids_for_pages?access_token=1719933678308212|xViKmCUvXGcEkMdwv2ZGmK6iZRE&appsecret_proof=268d572551610962ece4facc74622182154727f27eb2710fbd60a1dc1dcf72a1",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"10213188985661476",
+						"ids_for_pages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1719933678308212|xViKmCUvXGcEkMdwv2ZGmK6iZRE",
+							"equals": true
+						},
+						{
+							"key": "appsecret_proof",
+							"value": "268d572551610962ece4facc74622182154727f27eb2710fbd60a1dc1dcf72a1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Quick Replies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"text\":\"test\",\n    \"quick_replies\":[\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Search\",\n        \"payload\":\"<POSTBACK_PAYLOAD>\",\n        \"image_url\":\"http://example.com/img/red.png\"\n      },\n      {\n        \"content_type\":\"location\"\n      },\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Something Else\",\n        \"payload\":\"<POSTBACK_PAYLOAD>\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/me/messages?access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"me",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Video Attachment - URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"{{PSID}}\"\n  },\n\"message\":{\n    \"attachment\":{\n      \"type\":\"video\", \n      \"payload\":{\n        \"url\":\"https://player.vimeo.com/play/203684545?s=78961286_1504720983_19213850e675856a35aa6c35e932380f&loc=external&context=Vimeo%5CController%5CClipController.main&download=1\",\n        \"is_reusable\": true\n      }\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/me/messages?access_token={{PAGE_TOKEN}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"me",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "{{PAGE_TOKEN}}",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Video  - Graph API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n\"message\":{\n    \"attachment\":{\n      \"type\":\"video\", \n      \"payload\":{\n        \"url\":\"https://graph.facebook.com/v2.10/692846457575003\"\n      }\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.10/692846457575003?access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.10",
+						"692846457575003"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"text\":\"Pick a color:\",\n    \"quick_replies\":[\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Red\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED\"\n      },\n      {\n        \"content_type\":\"location\",\n        \"title\":\"HEY\"\n      },\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Green\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN\",\n        \"image_url\":\"http://petersfantastichats.com/img/green.png\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/1254459154682919?fields=first_name,last_name,profile_pic&access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"1254459154682919"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "first_name,last_name,profile_pic",
+							"equals": true
+						},
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Postback Buttons",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\": {\n    \"id\": \"{{PSID}}\"\n  },\n  \"message\":{\n    \"attachment\":{\n    \n      \"type\":\"template\",\n    \n      \"payload\":{\n    \n        \"template_type\":\"button\",\n    \n        \"text\":\"What do you want to do next?\",\n    \n        \"buttons\":[\n    \n          {\n    \n            \"type\":\"postback\",\n    \n            \"title\":\"Send Postback\",\n    \n            \"payload\":\"USER_DEFINED_PAYLOAD\"\n    \n          }\n    \n        ]\n    \n      }\n    \n    }\n  \n  }\n}\n"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/me/messages?access_token={{PAGE_TOKEN}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"me",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "{{PAGE_TOKEN}}",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send  Share Buttons - Generic Template",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"attachment\":{\n      \"type\":\"template\",\n      \"payload\":{\n        \"template_type\":\"generic\",\n        \"elements\":[\n          {\n            \"title\":\"Breaking News: Record Thunderstorms\",\n            \"subtitle\":\"The local area is due for record thunderstorms over the weekend.\",\n            \"image_url\":\"https://thechangreport.com/img/lightning.png\",\n            \"buttons\": [\n              {\n                \"type\": \"element_share\",\n                \"share_contents\": { \n                  \"attachment\": {\n                    \"type\": \"template\",\n                    \"payload\": {\n                      \"template_type\": \"generic\",\n                      \"elements\": [\n                        {\n                          \"title\": \"I took the hat quiz\",\n                          \"subtitle\": \"My result: Fez\",\n                          \"image_url\": \"https://bot.peters-hats.com/img/hats/fez.jpg\",\n                          \"default_action\": {\n                            \"type\": \"web_url\",\n                            \"url\": \"https://m.me/petershats?ref=invited_by_24601\"\n                          },\n                          \"buttons\": [\n                            {\n                              \"type\": \"web_url\",\n                              \"url\": \"https://m.me/petershats?ref=invited_by_24601\", \n                              \"title\": \"Take Quiz\"\n                            }\n                          ]\n                        }\n                      ]\n                    }\n                  }\n                }\n              }\n            ]\n          }\n        ]\n      }\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/me/messages?access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"me",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Send Text Message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n  \"text\": \"test\"\n    \n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/me/messages?access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"me",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attachments by mid",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"recipient\":{\n    \"id\":\"1254459154682919\"\n  },\n  \"message\":{\n    \"text\":\"Pick a color:\",\n    \"quick_replies\":[\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Red\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED\"\n      },\n      {\n        \"content_type\":\"location\",\n        \"title\":\"HEY\"\n      },\n      {\n        \"content_type\":\"text\",\n        \"title\":\"Green\",\n        \"payload\":\"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN\",\n        \"image_url\":\"http://petersfantastichats.com/img/green.png\"\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.10/EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD/attachments?access_token=EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD&appsecret_proof=33f4d735368e03159072fa695e9a71b2a87e9482b410dd8b789922b0ea0e3600",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.10",
+						"EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+						"attachments"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAYcRUPuy3QBAEs2NFvZB74wV8RzNtGdoHmiui1ObZANKEX75KwmPaB9PyNMNK5jhVW7L5uUIu58lxn9ZBoHu1q9pZC4lq8TZBQZBZCGdBY42CZBSgmxfbA3WjpmdZA7fMzQZCOsmZBhxIIQ9GUxsqz5nSmkvZA8bw7R3BZCND707oBnyqQZDZD",
+							"equals": true
+						},
+						{
+							"key": "appsecret_proof",
+							"value": "33f4d735368e03159072fa695e9a71b2a87e9482b410dd8b789922b0ea0e3600",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.6/1254459154682919?fields=first_name,last_name,profile_pic&access_token={{PAGE_TOKEN}}",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.6",
+						"1254459154682919"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "first_name,last_name,profile_pic",
+							"equals": true
+						},
+						{
+							"key": "access_token",
+							"value": "{{PAGE_TOKEN}}",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
