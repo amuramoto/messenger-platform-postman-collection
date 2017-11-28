@@ -71,18 +71,23 @@ Never used Postman or the Messenger Platform before? Here's some useful links to
 #### Messenger Platform
 
 - [Messenger Platform Developer Group](facebook.com/groups/messengerplatform/)
+
 - [Facebook Messenger Bot Tag on Stack Overflow](https://stackoverflow.com/questions/tagged/facebook-messenger-bot)
+
 - [Messenger Platform Update Bot](https://m.me/messengerplatform)
 
 - [Messenger Platform Docs](developers.facebook.com/docs/messenger-platform)
+
 - [Messenger Platform Quick Start Tutorial](developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
-- [Messenger Platform Getting Started](developers.facebook.com/docs/messenger-platform/getting-started/)
-- [Messenger Platform Introduction](developers.facebook.com/docs/messenger-platform/introduction)
 
 #### Postman
 
 - [Download Postman](https://www.getpostman.com/postman)
+
 - [Postman Collection Docs](https://www.getpostman.com/docs/postman/collections/managing_collections)
+
 - [Postman Environment Docs](https://www.getpostman.com/docs/postman/environments_and_globals/manage_environments)
+
 - [Postman Scripting Docs](https://www.getpostman.com/docs/postman/scripts/intro_to_scripts)
+
 - [Postman Scripting API Reference](https://www.getpostman.com/docs/postman/scripts/postman_sandbox_api_reference)
