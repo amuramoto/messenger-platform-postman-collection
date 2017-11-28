@@ -1,5 +1,6 @@
-# messenger-platform-postman-collection-
-A delicious Postman collection for all your Messenger Platform needs.
+# Postman Collection for Messenger Platform
+
+This is a [Postman](https://getpostman.com) collection that covers pretty much every API request available for the Messenger Platform. This collection should be useful for getting started working with your bot to try out features and send all the different message types. You can also use it once you are in production to send messages!
 
 ## Environment Variables
 
