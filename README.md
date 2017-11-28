@@ -59,3 +59,20 @@ Many of the optional vars will be set for you if you set the `SET_ENV` env var t
 | **Env Var** | **Type** | **Description** | **What's it For?** |
 | ----------- | -------- | --------------- | ------------------ |
 | `WIT_TOKEN` | String | A Wit.ai server access token | Connects your Messenger bot to a Wit.ai custom model. Available in the settings for your [Wit.ai](https://wit.ai/) app. |
+
+## Useful Resources
+
+#### Messenger Platform
+
+- [Messenger Platform Docs](developers.facebook.com/docs/messenger-platform)
+- [Messenger Platform Quick Start Tutorial](developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
+- [Messenger Platform Getting Started](developers.facebook.com/docs/messenger-platform/getting-started/)
+- [Messenger Platform Introduction](developers.facebook.com/docs/messenger-platform/introduction)
+
+#### Postman
+
+- [Download Postman](https://www.getpostman.com/postman)
+- [Postman Collection Docs](https://www.getpostman.com/docs/postman/collections/managing_collections)
+- [Postman Environment Docs](https://www.getpostman.com/docs/postman/environments_and_globals/manage_environments)
+- [Postman Scripting Docs](https://www.getpostman.com/docs/postman/scripts/intro_to_scripts)
+- [Postman Scripting API Reference](https://www.getpostman.com/docs/postman/scripts/postman_sandbox_api_reference)
