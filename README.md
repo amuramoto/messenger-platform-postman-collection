@@ -2,6 +2,10 @@
 
 This is a [Postman](https://getpostman.com) collection that covers pretty much every API request available for the Messenger Platform. This collection should be useful for getting started working with your bot to try out features and send all the different message types. You can also use it once you are in production to send messages!
 
+## Updating this Collection
+
+**Postman collections do not automatically sync when they are updated.** So if you like this, you should come back periodically to download it. I'll try to keep a 'last updated' date at the top of this readme and maybe some kind of changelog.
+
 ## Environment Variables
 
 This collection makes liberal use of [Postman environment variables](https://www.getpostman.com/docs/postman/environments_and_globals/manage_environments) to automate API requests to the greatest extent possible. Basically, anytime you see `{{SOME_VAR_NAME}}` in a request body or URI that's a Postman env var. 
