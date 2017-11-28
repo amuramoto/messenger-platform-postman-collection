@@ -4,7 +4,9 @@ This is a [Postman](https://getpostman.com) collection that covers pretty much e
 
 ## Environment Variables
 
-This collection makes liberal use of [Postman environment variables](https://www.getpostman.com/docs/postman/environments_and_globals/manage_environments) to automate API requests to the greatest extent possible. Basically, anytime you see `{{SOME_VAR_NAME}}` in a request body or URI that's a Postman env var.
+This collection makes liberal use of [Postman environment variables](https://www.getpostman.com/docs/postman/environments_and_globals/manage_environments) to automate API requests to the greatest extent possible. Basically, anytime you see `{{SOME_VAR_NAME}}` in a request body or URI that's a Postman env var. 
+
+When you load this collection into Postman, it will also load a 'Messenger Platform Environment Variables' environment that includes all the possible env vars used by this collection.
 
 ### Required Environment Variables
 
