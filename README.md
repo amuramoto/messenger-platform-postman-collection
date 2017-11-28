@@ -1,7 +1,9 @@
 # messenger-platform-postman-collection-
 A delicious Postman collection for all your Messenger Platform needs.
 
-## Required Environment Variables
+## Environment Variables
+
+### Required Environment Variables
 
 **At a minimum** you should set these environment variables, since they are needed for almost all Messenger Platform API requests, especially message sends.
 
@@ -11,23 +13,23 @@ A delicious Postman collection for all your Messenger Platform needs.
 | `PAGE_TOKEN` | String | Your Page access token  | Almost all API requests. Available in the 'Token Generation' section of your app's Messenger settings. |
 | `SET_ENV`| Boolean | Sets whether other env vars will be automatically set from API responses when you use Postman's collection runner. | This is a convenience so that you don't have to manually set a bunch of IDs for all the different API requests. |
 
-## Optional Environment Variables
+### Optional Environment Variables
 
-### Reusable Assets
+#### Reusable Assets
 
 | **Env Var** | **Type** | **Description** | **What's it For?** |
 | ----------- | -------- | --------------- | ------------------ |
 | `IMAGE_ATTACHMENT_ID` | String | An `attachment_id` of an uploaded image | The `attachment_id` to use for message sends with an image. |
 | `VIDEO_ATTACHMENT_ID` | String | An `attachment_id` of an uploaded video | The `attachment_id` to use for message sends with a video. |
 
-### Handover Protocol
+#### Handover Protocol
 
 | **Env Var** | **Type** | **Description** | **What's it For?** |
 | ----------- | -------- | --------------- | ------------------ |
 | `APP_ID_PRIMARY` | String | An app ID | The app ID for the Facebook app you want to use as the Primary Receiver for your bot. |
 | `APP_ID_SECONDARY` | String | An app ID | The app ID for the Facebook app you want to use as the Secondary Primary Receiver for your bot. |
 
-### Broadcast API
+#### Broadcast API
 
 | **Env Var** | **Type** | **Description** | **What's it For?** |
 | ----------- | -------- | --------------- | ------------------ |
@@ -36,7 +38,7 @@ A delicious Postman collection for all your Messenger Platform needs.
 | `REACH_ESTIMATION_ID` | String | A `reach_estimation_id` | The `reach_estimation_id` to start a reach estimation for. |
 | `CUSTOM_LABEL_ID` | String | A `custom_label_id` | The `custom_label_id` to associate with PSIDs or to target a broadcast to.  |
 
-### ID Matching
+#### ID Matching
 
 | **Env Var** | **Type** | **Description** | **What's it For?** |
 | ----------- | -------- | --------------- | ------------------ |
@@ -45,7 +47,7 @@ A delicious Postman collection for all your Messenger Platform needs.
 | `APP_SECRET` | String | An app secret | The app secret to use with the ID Matching API. |
 | `APP_SECRET_PROOF` | String | An app secret proof | The [app secret proof](https://developers.facebook.com/docs/graph-api/securing-requests#appsecret_proof) to use with the ID Matching API. |
 
-### Built-in NLP
+#### Built-in NLP
 
 | **Env Var** | **Type** | **Description** | **What's it For?** |
 | ----------- | -------- | --------------- | ------------------ |
