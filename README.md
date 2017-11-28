@@ -4,7 +4,7 @@ This is a [Postman](https://getpostman.com) collection that covers pretty much e
 
 ## Environment Variables
 
-This collection makes liberal use of [Postman environment variables](https://www.getpostman.com/docs/postman/environments_and_globals/manage_environments) to automate API requests to the greatest extent possible. Anytime you see `{{SOME_VAR_NAME}}` in a request body or URI, that's a Postman env var.
+This collection makes liberal use of [Postman environment variables](https://www.getpostman.com/docs/postman/environments_and_globals/manage_environments) to automate API requests to the greatest extent possible. Basically, anytime you see `{{SOME_VAR_NAME}}` in a request body or URI that's a Postman env var.
 
 ### Required Environment Variables
 
@@ -18,7 +18,7 @@ This collection makes liberal use of [Postman environment variables](https://www
 
 ### Optional Environment Variables
 
-Many of the optional vars will be set for you if you set the `SET_ENV` env var to `TRUE` and run Postman's collection runner. You can also set these manually if you want.
+Many of the optional vars will be set for you if you set the `SET_ENV` env var to `TRUE` and run Postman's collection runner. You can also set these manually in each call if you want.
 
 #### Reusable Assets
 
