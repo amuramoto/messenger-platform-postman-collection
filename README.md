@@ -66,7 +66,13 @@ Many of the optional vars will be set for you if you set the `SET_ENV` env var t
 
 ## Useful Resources
 
+Never used Postman or the Messenger Platform before? Here's some useful links to get you started and to get help when you have questions or run into problems. <3
+
 #### Messenger Platform
+
+- [Messenger Platform Developer Group](facebook.com/groups/messengerplatform/)
+- [Facebook Messenger Bot Tag on Stack Overflow](https://stackoverflow.com/questions/tagged/facebook-messenger-bot)
+- [Messenger Platform Update Bot](https://m.me/messengerplatform)
 
 - [Messenger Platform Docs](developers.facebook.com/docs/messenger-platform)
 - [Messenger Platform Quick Start Tutorial](developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
