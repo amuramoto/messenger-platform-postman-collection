@@ -1,4 +1,4 @@
-# Postman Collection for Messenger Platform
+# Postman Collection for Messenger Platform &nbsp;&nbsp;&nbsp; [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a760368515fa96cedcb6)
 
 This is a [Postman](https://getpostman.com) collection that covers pretty much every API request available for the Messenger Platform. This collection should be useful for getting started working with your bot to try out features and send all the different message types. You can also use it once you are in production to send messages!
 
