@@ -103,6 +103,16 @@ Many of the optional vars will be set for you if you set the `SET_ENV` env var t
 | ----------- | -------- | --------------- | ------------------ |
 | `EXTENSIONS_URL` | String | A HTTPS URL | Used for Messenger Profile API calls that require a URL. |
 
+## Behold!
+
+<p align="center">
+<a href="http://bit.ly/messenger-postman-video"><img src="https://github.com/amuramoto/messenger-platform-postman-collection/blob/master/videoimg.jpg?raw=true" />
+  </p>
+<p align="center">
+<a href="http://bit.ly/messenger-postman-video">
+(Click to see the YouTube video)</a>
+</p>
+
 ## Useful Resources
 
 Never used Postman or the Messenger Platform before? Here's some useful links to get you started and to get help when you have questions or run into problems. <3
