@@ -57,7 +57,6 @@ Many of the optional vars will be set for you if you set the `SET_ENV` env var t
 | `ASID`  | String | A user's app-scoped ID | The app-scoped ID to match with the ID Matching API. |
 | `APP_TOKEN` | String | An app token | The app token to use with the ID Matching API. |
 | `APP_SECRET` | String | An app secret | The app secret to use with the ID Matching API. |
-| `APP_SECRET_PROOF` | String | An app secret proof | The [app secret proof](https://developers.facebook.com/docs/graph-api/securing-requests#appsecret_proof) to use with the ID Matching API. |
 
 #### Built-in NLP
 
