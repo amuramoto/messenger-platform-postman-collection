@@ -48,7 +48,7 @@ Many of the optional vars will be set for you if you set the `SET_ENV` env var t
 | `MESSAGE_CREATIVE_ID_TARGETED` | String | A `message_creative_id` | The `message_creative_id` of a message creative to broadcast to open conversations associated with a custom label. |
 | `REACH_ESTIMATION_ID` | String | A `reach_estimation_id` | The `reach_estimation_id` to start a reach estimation for. |
 | `CUSTOM_LABEL_ID` | String | A `custom_label_id` | The `custom_label_id` to associate with PSIDs or to target a broadcast to. When `SET_ENV` is set to `TRUE`, the value will be 'custom_label_<timestamp>'. |
-| `CUSTOM_LABEL_ID_TO_DELETE` | String | A `custom_label_id` | When `SET_ENV` is set to `TRUE`, this is set when the `POST` `custom_label_id` to that will be deleted when .  |
+| `CUSTOM_LABEL_ID_TO_DELETE` | String | A `custom_label_id` | When `SET_ENV` is set to `TRUE`, this is set when the 'Create Custom Label' call happens. It is deleted when 'Delete Custom Label' call happens.  |
 
 #### ID Matching
 
@@ -64,6 +64,12 @@ Many of the optional vars will be set for you if you set the `SET_ENV` env var t
 | **Env Var** | **Type** | **Description** | **What's it For?** |
 | ----------- | -------- | --------------- | ------------------ |
 | `WIT_TOKEN` | String | A Wit.ai server access token | Connects your Messenger bot to a Wit.ai custom model. Available in the settings for your [Wit.ai](https://wit.ai/) app. |
+
+#### Messenger Profile API
+
+| **Env Var** | **Type** | **Description** | **What's it For?** |
+| ----------- | -------- | --------------- | ------------------ |
+| `EXTENSIONS_URL` | String | A HTTPS URL | Used for Messenger Profile API calls that require a URL. |
 
 ## Useful Resources
 
