@@ -119,15 +119,15 @@ Never used Postman or the Messenger Platform before? Here's some useful links to
 
 #### Messenger Platform
 
-- [Messenger Platform Developer Group](facebook.com/groups/messengerplatform/)
+- [Messenger Platform Developer Group](https://facebook.com/groups/messengerplatform/)
 
 - [Facebook Messenger Bot Tag on Stack Overflow](https://stackoverflow.com/questions/tagged/facebook-messenger-bot)
 
 - [Messenger Platform Update Bot](https://m.me/messengerplatform)
 
-- [Messenger Platform Docs](developers.facebook.com/docs/messenger-platform)
+- [Messenger Platform Docs](https://developers.facebook.com/docs/messenger-platform)
 
-- [Messenger Platform Quick Start Tutorial](developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
+- [Messenger Platform Quick Start Tutorial](https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start)
 
 #### Postman
 
